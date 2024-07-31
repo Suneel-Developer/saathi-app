@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <div className='flex items-center justify-between md:justify-normal gap-[10px]'>
+                        <div className='flex items-center gap-[10px]'>
                             <img src="/assets/app-store.svg" alt="app-store" className='cursor-pointer' />
                             <img src="/assets/google-play.svg" alt="google-play" className='cursor-pointer' />
                         </div>
