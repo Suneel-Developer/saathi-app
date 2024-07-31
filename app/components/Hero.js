@@ -3,7 +3,7 @@ import Header from './Header';
 
 const Hero = () => {
     return (
-        <section className="h-[698px] md:h-screen w-full relative bg-[url('/assets/mobile-img.jfif')] md:bg-none bg-cover bg-center bg-no-repeat">
+        <section className="h-[698px] md:h-screen w-full relative bg-[url('/assets/mobile-img.jfif')] md:bg-none bg-cover bg-center bg-no-repeat px-4 md:px-0">
             <video className="hero-video hidden md:block" autoPlay loop muted>
                 <source src="/assets/vecteezy_3d-summer-travel-with-wooden-bridge-leading-into-the-sea-on_37998758.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
