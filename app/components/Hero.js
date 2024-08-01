@@ -36,13 +36,13 @@ const Hero = () => {
                     </button>
 
                     {isAndroid && (
-                        <button className='w-[200px] md:w-[239px] h-[50px] hidden md:flex md:h-[60px] bg-white rounded-[50px] text-center text-xl md:text-2xl text-[#0A0A0A] font-semibold leading-[27.28px] md:leading-[32.74px] mt-7 md:mt-8 items-center justify-center gap-1'>
+                        <button className='w-[200px] md:w-[239px] h-[50px] flex md:h-[60px] bg-white rounded-[50px] text-center text-xl md:text-2xl text-[#0A0A0A] font-semibold leading-[27.28px] md:leading-[32.74px] mt-7 md:mt-8 items-center justify-center gap-1'>
                             <img src="/assets/andriod.svg" alt="apple" className='h-7 w-[23px]' />
                             Download Now
                         </button>
                     )}
                     {isIOS && (
-                        <button className='w-[200px] md:w-[239px] h-[50px] hidden md:flex md:h-[60px] bg-white rounded-[50px] text-center text-xl md:text-2xl text-[#0A0A0A] font-semibold leading-[27.28px] md:leading-[32.74px] mt-7 md:mt-8 items-center justify-center gap-1'>
+                        <button className='w-[200px] md:w-[239px] h-[50px] flex md:h-[60px] bg-white rounded-[50px] text-center text-xl md:text-2xl text-[#0A0A0A] font-semibold leading-[27.28px] md:leading-[32.74px] mt-7 md:mt-8 items-center justify-center gap-1'>
                             <img src="/assets/apple.svg" alt="apple" className='h-7 w-[23px]' />
                             Download Now
                         </button>
