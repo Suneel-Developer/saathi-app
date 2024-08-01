@@ -4,13 +4,16 @@ import Header from './Header';
 // import { isAndroid, isIOS } from 'react-device-detect';
 
 const Hero = () => {
+    const [isAndroid, setIsAndroid] = useState(false);
     const [isIOS, setIsIOS] = useState(false);
-
+  
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            setIsIOS(/iPhone|iPad|iPod/i.test(userAgent));
-        }
+      if (typeof window !== 'undefined') {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+        setIsAndroid(/Android/i.test(userAgent));
+        setIsIOS(/iPhone|iPad|iPod/i.test(userAgent));
+      }
     }, []);
     return (
         <section className="h-screen w-full relative bg-[url('/assets/mobile-img.jfif')] md:bg-none bg-cover bg-center bg-no-repeat px-4 md:px-0 flex items-center justify-center">
@@ -33,10 +36,11 @@ const Hero = () => {
                         Download Now
                     </button>
 
-                    <button>
-                        Android Button
-                    </button>
-                    
+                    {isAndroid && (
+                        <button>
+                            Android Button
+                        </button>
+                    )}
                     {isIOS && (
                         <button>
                             Apple Button
