@@ -38,7 +38,7 @@
 }
 
 .custome-dots li.slick-active {
-  background-color: #FFFFFF; 
+  background-color: #FFFFFF;
 }
 
 .custome-dots {
@@ -116,4 +116,49 @@
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.features1 {
+  border-radius: 20px;
+  background: #E9A1BC;
+  filter: blur(50px);
+  width: 306px;
+  height: 336px;
+  flex-shrink: 0;
+}
+
+.features2 {
+  border-radius: 20px;
+  background: #A094FF;
+  filter: blur(50px);
+  width: 306px;
+  height: 336px;
+  flex-shrink: 0;
+}
+
+.features3 {
+  border-radius: 20px;
+  background: #6CDFEA;
+  filter: blur(50px);
+  width: 306px;
+  height: 336px;
+  flex-shrink: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .features1 {
+    width: 279px;
+    height: 253px;
+  }
+
+  .features2 {
+    width: 279px;
+    height: 253px;
+  }
+
+  .features3 {
+    width: 279px;
+    height: 253px;
+  }
 }

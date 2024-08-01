@@ -13,7 +13,7 @@ const Header = () => {
     };
 
     return (
-        <header className='relative z-30'>
+        <header className='relative z-40'>
             <div className='flex items-center justify-between h-[60px] md:h-auto w-full fixed md:relative top-0 bg-white md:bg-transparent py-3 md:py-6 px-4 lg:px-[10%]'>
                 <Link href="/" className='flex items-center gap-[6px]'>
                     <img src="/assets/logo.svg" alt="saathi-logo" className='h-[24px] md:h-[28px]' />
