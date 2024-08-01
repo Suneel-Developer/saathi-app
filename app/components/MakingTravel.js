@@ -19,7 +19,7 @@ const MakingTravel = () => {
                 </div>
 
                 <div className='order-1 md:order-2'>
-                    <img src="/assets/1.svg" alt="Making travel effortless for All" className='opacity-85' />
+                    <img src="/assets/1.webp" alt="Making travel effortless for All" loading='lazy' />
                 </div>
             </div>
         </section>

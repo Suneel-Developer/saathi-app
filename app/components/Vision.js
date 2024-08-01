@@ -13,7 +13,7 @@ const Vision = () => {
             <div className='max-w-[600px] lg:max-w-[1260px] w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
 
                 <div>
-                    <img src="/assets/vision.svg" alt="Making travel effortless for All" className='opacity-85' />
+                    <img src="/assets/vision.webp" alt="Making travel effortless for All" />
                 </div>
 
                 <div className='flex lg:justify-end'>

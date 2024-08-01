@@ -1,15 +1,25 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
 import Header from './Header';
+// import { isAndroid, isIOS } from 'react-device-detect';
 
 const Hero = () => {
+    const [isIOS, setIsIOS] = useState(false);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            setIsIOS(/iPhone|iPad|iPod/i.test(userAgent));
+        }
+    }, []);
     return (
-        <section className="h-[698px] md:h-screen w-full relative bg-[url('/assets/mobile-img.jfif')] md:bg-none bg-cover bg-center bg-no-repeat px-4 md:px-0">
+        <section className="h-screen w-full relative bg-[url('/assets/mobile-img.jfif')] md:bg-none bg-cover bg-center bg-no-repeat px-4 md:px-0 flex items-center justify-center">
             <video className="hero-video hidden md:block" autoPlay loop muted>
                 <source src="/assets/vecteezy_3d-summer-travel-with-wooden-bridge-leading-into-the-sea-on_37998758.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="hero-content">
-                <div className='hidden md:block'>
+                <div className='hidden md:block absolute top-0 w-full left-0 right-0'>
                     <Header />
                 </div>
                 <div className='flex flex-col items-center justify-center pt-[50px] mt-[60px] md:mt-[0px]'>
@@ -22,6 +32,16 @@ const Hero = () => {
                         <img src="/assets/apple.svg" alt="apple" className='block md:hidden h-7 w-[23px]' />
                         Download Now
                     </button>
+
+                    <button>
+                        Android Button
+                    </button>
+                    
+                    {isIOS && (
+                        <button>
+                            Apple Button
+                        </button>
+                    )}
                 </div>
             </div>
         </section>

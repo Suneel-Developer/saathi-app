@@ -15,7 +15,11 @@ const Header = () => {
     return (
         <header className='relative z-30'>
             <div className='flex items-center justify-between h-[60px] md:h-auto w-full fixed md:relative top-0 bg-white md:bg-transparent py-3 md:py-6 px-4 lg:px-[10%]'>
-                <img src="/assets/saathi-logo.svg" alt="saathi-logo" className='h-[35px] md:h-auto' />
+                <Link href="/" className='flex items-center gap-[6px]'>
+                    <img src="/assets/logo.svg" alt="saathi-logo" className='h-[24px] md:h-[28px]' />
+                    <p className='text-[#605CD4] tracking-[-1px] text-[26px] md:text-3xl font-semibold md:mt-[5px]'>Saathi.app</p>
+                </Link>
+
 
                 {/* Links  */}
                 <ul className='hidden md:flex items-center gap-10'>
@@ -70,17 +74,21 @@ const Header = () => {
                                 <Link href="#" className='text-[#0A0A0A] text-2xl font-semibold hover:font-bold transition-colors duration-200'>Partner with us</Link>
                             </li>
                         </ul>
+                    </div>
+
+
+                    <div className='pb-10'>
 
                         {/* Social Links  */}
-                        <ul className='flex items-center gap-6 py-10'>
+                        <ul className='flex items-center gap-6'>
                             <li><Link href="#"><img src="/assets/facebook.svg" alt="facebook" /></Link></li>
                             <li><Link href="#"><img src="/assets/instagram.svg" alt="instagram" /></Link></li>
                             <li><Link href="#"><img src="/assets/linkedn.svg" alt="linkedn" /></Link></li>
                             <li><Link href="#"><img src="/assets/twitter.svg" alt="twitter" /></Link></li>
                         </ul>
-                    </div>
 
-                    <div className='border-t-[.5px] pb-10 border-[#0A0A0A] pt-5'>
+                        <div className='h-[.5px] mb-5 mt-8 bg-[#0A0A0A] w-full'></div>
+
                         <div className='flex items-center justify-between gap-3'>
                             <img src="/assets/app-store.svg" alt="app-store" />
                             <img src="/assets/google-play.svg" alt="google-play" />
