@@ -7,7 +7,10 @@ const Footer = () => {
             <div className='max-w-[1260px] w-full mx-auto'>
                 <div className='border-b-[0.5px] border-[#828282] pb-4 md:pb-7 mb-4 md:mb-7 flex justify-between flex-col md:flex-row gap-6 md:gap-2'>
                     <div className='flex items-start md:items-center gap-4 md:gap-10 flex-col md:flex-row'>
-                        <img src="/assets/saathi-logo.svg" alt="saathi-logo" />
+                        <Link href="/" className='flex items-center gap-[6px]'>
+                            <img src="/assets/logo.svg" alt="saathi-logo" className='h-[24px] md:h-[28px]' />
+                            <p className='text-[#605CD4] tracking-[-1px] text-[26px] md:text-3xl font-semibold md:mt-[5px]'>Saathi.app</p>
+                        </Link>
 
                         <button className='px-[22px] h-[50px] border border-[#6F6F6F] flex items-center gap-2 rounded-[50px] justify-center text-[15px] font-normal leading-[20.46px]'>
                             <img src="/assets/globe.svg" alt="globe" />

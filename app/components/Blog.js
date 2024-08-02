@@ -69,7 +69,7 @@ const Blog = () => {
                         <div className='px-2'>
                             <div className='w-full bg-white rounded-[18px] md:rounded-[40px] overflow-hidden'>
                                 <div className='grid grid-cols-1 md:grid-cols-2 w-full md:h-[400px]'>
-                                    <div className='w-full h-[220px] md:h-full bg-[url("/assets/blog.webp")] bg-no-repeat bg-cover bg-center'></div>
+                                    <div className='w-full h-[220px] md:h-full bg-[url("/assets/blog.png")] bg-no-repeat bg-cover bg-center'></div>
 
                                     <div className='bg-white p-3 md:p-10 max-w-[530px] w-full'>
                                         <h1 className='text-xl md:text-4xl text-[#292929] font-normal leading-[27.28px] md:leading-[49.1px] mb-2 md:mb-4'>
@@ -96,7 +96,7 @@ const Blog = () => {
                         <div className='px-2'>
                             <div className='w-full bg-white rounded-[18px] md:rounded-[40px] overflow-hidden'>
                                 <div className='grid grid-cols-1 md:grid-cols-2 w-full md:h-[400px]'>
-                                    <div className='w-full h-[220px] md:h-full bg-[url("/assets/blog-2.webp")] bg-no-repeat bg-cover bg-center'></div>
+                                    <div className='w-full h-[220px] md:h-full bg-[url("/assets/blog-2.png")] bg-no-repeat bg-cover bg-center'></div>
 
                                     <div className='bg-white p-3 md:p-10 max-w-[530px] w-full'>
                                         <h1 className='text-xl md:text-4xl text-[#292929] font-normal leading-[27.28px] md:leading-[49.1px] mb-2 md:mb-4'>
@@ -123,7 +123,7 @@ const Blog = () => {
                         <div className='px-2'>
                             <div className='w-full bg-white rounded-[18px] md:rounded-[40px] overflow-hidden'>
                                 <div className='grid grid-cols-1 md:grid-cols-2 w-full md:h-[400px]'>
-                                    <div className='w-full h-[220px] md:h-full bg-[url("/assets/blog.webp")] bg-no-repeat bg-cover bg-center'></div>
+                                    <div className='w-full h-[220px] md:h-full bg-[url("/assets/blog.png")] bg-no-repeat bg-cover bg-center'></div>
 
                                     <div className='bg-white p-3 md:p-10 max-w-[530px] w-full'>
                                         <h1 className='text-xl md:text-4xl text-[#292929] font-normal leading-[27.28px] md:leading-[49.1px] mb-2 md:mb-4'>

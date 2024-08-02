@@ -1,7 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
-// import { isAndroid, isIOS } from 'react-device-detect';
+import Link from 'next/link';
+
 
 const Hero = () => {
     const [isAndroid, setIsAndroid] = useState(false);
@@ -16,9 +17,9 @@ const Hero = () => {
         }
     }, []);
     return (
-        <section className="h-screen w-full relative bg-[url('/assets/mobile-img.jfif')] md:bg-none bg-cover bg-center bg-no-repeat px-4 md:px-0 flex items-center justify-center">
+        <section className="h-screen w-full relative bg-[url('/assets/mobile-img.jfif')] md:bg-none bg-cover bg-center bg-no-repeat px-4 md:px-0 flex items-start md:items-center justify-center md:justify-center">
             <video className="hero-video hidden md:block" autoPlay loop muted>
-                <source src="/assets/vecteezy_3d-summer-travel-with-wooden-bridge-leading-into-the-sea-on_37998758.mp4" type="video/mp4" />
+                <source src="/assets/video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="hero-content">
@@ -35,17 +36,20 @@ const Hero = () => {
                         Download Now
                     </button>
 
+
+
                     {isAndroid && (
-                        <button className='w-[200px] md:w-[239px] h-[50px] flex md:h-[60px] bg-white rounded-[50px] text-center text-xl md:text-2xl text-[#0A0A0A] font-semibold leading-[27.28px] md:leading-[32.74px] mt-7 md:mt-8 items-center justify-center gap-1'>
-                            <img src="/assets/andriod.svg" alt="apple" className='h-7 w-[23px]' />
+                        <Link href="https://play.google.com/store/apps/details?id=app.saathi.android" className='w-[200px] md:w-[239px] h-[50px] flex md:h-[60px] bg-white rounded-[50px] text-center text-xl md:text-2xl text-[#0A0A0A] font-semibold leading-[27.28px] md:leading-[32.74px] mt-7 md:mt-8 items-center justify-center gap-1'>
+                            <img src="/assets/andriod.svg" alt="andriod" className='h-7 w-[23px]' />
                             Download Now
-                        </button>
+                        </Link>
                     )}
+                    
                     {isIOS && (
-                        <button className='w-[200px] md:w-[239px] h-[50px] flex md:h-[60px] bg-white rounded-[50px] text-center text-xl md:text-2xl text-[#0A0A0A] font-semibold leading-[27.28px] md:leading-[32.74px] mt-7 md:mt-8 items-center justify-center gap-1'>
+                        <Link href="https://apps.apple.com/app/apple-store/id6479198766" className='w-[200px] md:w-[239px] h-[50px] flex md:h-[60px] bg-white rounded-[50px] text-center text-xl md:text-2xl text-[#0A0A0A] font-semibold leading-[27.28px] md:leading-[32.74px] mt-7 md:mt-8 items-center justify-center gap-1'>
                             <img src="/assets/apple.svg" alt="apple" className='h-7 w-[23px]' />
                             Download Now
-                        </button>
+                        </Link>
                     )}
                 </div>
             </div>
