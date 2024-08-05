@@ -24,7 +24,7 @@ const Header = () => {
                 {/* Links  */}
                 <ul className='hidden md:flex items-center gap-10'>
                     <li>
-                        <Link href="#" className='text-[#0A0A0A] text-base font-semibold hover:text-black hover:font-bold transition-colors duration-200'>About</Link>
+                        <Link href="/about-us" className='text-[#0A0A0A] text-base font-semibold hover:text-black hover:font-bold transition-colors duration-200'>About</Link>
                     </li>
                     <li>
                         <Link href="#" className='text-[#0A0A0A] text-base font-semibold hover:font-bold transition-colors duration-200'>Get visa</Link>

@@ -18,8 +18,8 @@ const MakingTravel = () => {
                     </button>
                 </div>
 
-                <div className='order-1 md:order-2'>
-                    <img src="/assets/1.webp" alt="Making travel effortless for All" loading='lazy' />
+                <div className='order-1 md:order-2 rounded[18px] md:rounded-[52px] overflow-hidden'>
+                    <img src="/assets/011.webp" alt="Making travel effortless for All" loading='lazy' />
                 </div>
             </div>
         </section>
